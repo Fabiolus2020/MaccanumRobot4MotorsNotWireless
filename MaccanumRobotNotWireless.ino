@@ -178,6 +178,9 @@ void loop() {
       myMotor3->run(FORWARD);
       myMotor4->run(BACKWARD);
       motorspeedModeOne = map(joyposY, 470, 0, 0, 255);
+      // motorspeed2 = map(joyposY, 470, 0, 0, 255);
+      // motorspeed3 = map(joyposY, 470, 0, 0, 255);
+      //  motorspeed4 = map(joyposY, 470, 0, 0, 255);
       myMotor1->setSpeed(motorspeedModeOne);
       myMotor2->setSpeed(motorspeedModeOne);
       myMotor3->setSpeed(motorspeedModeOne);
@@ -190,6 +193,9 @@ void loop() {
       myMotor3->run(FORWARD);
       myMotor4->run(BACKWARD);
       motorspeedModeTwo = map(potValue, 0, 1023, 0, 255);
+      // motorspeed2 = map(joyposY, 470, 0, 0, 255);
+      // motorspeed3 = map(joyposY, 470, 0, 0, 255);
+      //  motorspeed4 = map(joyposY, 470, 0, 0, 255);
       myMotor1->setSpeed(motorspeedModeTwo);
       myMotor2->setSpeed(motorspeedModeTwo);
       myMotor3->setSpeed(motorspeedModeTwo);
@@ -227,16 +233,24 @@ void loop() {
     {
       motorspeedModeOne = map(joyposY, 470, 0, 0, 255);
       myMotor1->run(FORWARD);
+      myMotor2->run(BACKWARD);
+      myMotor3->run(BACKWARD);
       myMotor4->run(FORWARD);
       myMotor1->setSpeed(motorspeedModeOne);
+      myMotor2->setSpeed(motorspeedModeOne);
+      myMotor3->setSpeed(motorspeedModeOne);
       myMotor4->setSpeed(motorspeedModeOne);
     }
     else if (stateNum == 2)
     {
       motorspeedModeTwo = map(potValue, 0, 1023, 0, 255);
       myMotor1->run(FORWARD);
+      myMotor2->run(BACKWARD);
+      myMotor3->run(BACKWARD);
       myMotor4->run(FORWARD);
       myMotor1->setSpeed(motorspeedModeTwo);
+      myMotor2->setSpeed(motorspeedModeTwo);
+      myMotor3->setSpeed(motorspeedModeTwo);
       myMotor4->setSpeed(motorspeedModeTwo);
     }
   }
@@ -272,6 +286,7 @@ void loop() {
       motorspeedModeTwo = map(potValue, 0, 1023, 0, 255);
       myMotor2->run(FORWARD);
       myMotor3->run(FORWARD);
+      // myMotor4->run(BACKWARD);
       myMotor2->setSpeed(motorspeedModeTwo);
       myMotor3->setSpeed(motorspeedModeTwo);
     }
