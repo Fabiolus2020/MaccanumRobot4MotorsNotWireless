@@ -19,8 +19,8 @@ Adafruit_DCMotor *myMotor4 = AFMS.getMotor(4);
 // Define Joystick Values - Start at 512 (middle position) this might change depending on batteries and motor type.
 int joyposX = 512;
 //int joyposX;
-int joyposY;
-int modeCount;
+int joyposY = 512;
+//int modeCount;
 
 //defining joystick button followed by declaring variables and build mechanical state machine to keep count of joystick and have 3 modes
 const int buttonPin  = 6;
