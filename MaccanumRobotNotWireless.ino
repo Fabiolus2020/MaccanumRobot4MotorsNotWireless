@@ -53,7 +53,7 @@ void setup() {
   //  modeButton.setDebounceTime(50); // set debounce time to 50 milliseconds
 }
 void loop() {
-  uint8_t i;
+//  uint8_t i;
   // read the pushbutton input pin
   buttonState = digitalRead(buttonPin);
   // check if the button is pressed or released
